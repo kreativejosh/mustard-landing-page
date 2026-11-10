@@ -1,13 +1,26 @@
 import type { Metadata, Viewport } from 'next';
-import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import { Nav } from '@/components/nav';
 import { Footer } from '@/components/footer';
 import { Reveal } from '@/components/reveal';
 import { SITE_URL, NAME, PAGES } from '@/lib/seo';
 import './globals.css';
 
-const sans = IBM_Plex_Sans({ subsets: ['latin'], weight: ['300', '400', '500'], variable: '--font-sans', display: 'swap' });
-const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' });
+// IBM Plex (SIL OFL) served from the repo: no font download at build time, so builds never depend on Google Fonts.
+const sans = localFont({
+  src: [
+    { path: '../assets/fonts/ibm-plex-sans-latin-400-normal.woff', weight: '400', style: 'normal' },
+    { path: '../assets/fonts/ibm-plex-sans-latin-500-normal.woff', weight: '500', style: 'normal' },
+  ],
+  variable: '--font-sans', display: 'swap', fallback: ['system-ui', 'sans-serif'],
+});
+const mono = localFont({
+  src: [
+    { path: '../assets/fonts/ibm-plex-mono-latin-400-normal.woff', weight: '400', style: 'normal' },
+    { path: '../assets/fonts/ibm-plex-mono-latin-500-normal.woff', weight: '500', style: 'normal' },
+  ],
+  variable: '--font-mono', display: 'swap', fallback: ['ui-monospace', 'monospace'],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

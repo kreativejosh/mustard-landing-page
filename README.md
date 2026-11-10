@@ -10,7 +10,7 @@ npm run build    # static site in out/
 
 ## Content
 - Copy lives in `lib/copy.ts`, word for word from `content/website-copy.md`. Do not reword it or add claims.
-- Brand: colours from `content/brand-tokens.css`, IBM Plex Sans and Mono (next/font; `.woff` files in `assets/fonts` for the share images, SIL OFL), logo and renders in `public/assets/`, hero shader from `lib/brand/scenes.js`. These come from the Mustard Bio brand repo; refresh them from there when the brand assets change.
+- Brand: colours from `content/brand-tokens.css`, IBM Plex Sans and Mono (`.woff` files in `assets/fonts`, loaded with next/font/local, SIL OFL), logo and renders in `public/assets/`, hero shader from `lib/brand/scenes.js`. These come from the Mustard Bio brand repo; refresh them from there when the brand assets change.
 
 ## Search and AI search
 Generated from the copy, see `lib/seo.ts`:
