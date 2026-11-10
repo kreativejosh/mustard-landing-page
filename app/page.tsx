@@ -6,7 +6,8 @@ import { HOME } from '@/lib/copy';
 import { HeroCanvas } from '@/components/hero-canvas';
 import { MaverickUI } from '@/components/maverick-ui';
 import { CtaBand } from '@/components/cta-band';
-import { Btn, Tag, Title, Frame, Rule, Arrow } from '@/components/ui';
+import { Btn, Tag, Title, Frame, Arrow } from '@/components/ui';
+import { Illo } from '@/components/illo';
 
 export const metadata: Metadata = pageMetadata('home');
 
@@ -22,7 +23,7 @@ export default function Home() {
           <Title as="h1" lines={hero.title} className="d-1" />
           <div className="hero-side" data-r>
             <p className="hero-sub">{hero.sub}</p>
-            <div className="ctas"><Btn href="#approach" tone="lime">{hero.primary}</Btn><Btn href="/about#contact" tone="light">{hero.secondary}</Btn></div>
+            <div className="ctas"><Btn href="#approach" tone="lime">{hero.primary}</Btn></div>
           </div>
         </div>
         <div className="hero-ticks" aria-hidden="true">{Array.from({ length: 61 }, (_, i) => <i key={i} className={i === 30 ? 'dose' : i % 10 === 0 ? 'maj' : i % 5 === 0 ? 'mid' : undefined} />)}</div>
@@ -30,7 +31,7 @@ export default function Home() {
 
       {/* Statement */}
       <section className="wrap statement">
-        <div className="st-l"><Tag>Mustard Bio</Tag><Rule /></div>
+        <div className="st-l"><Tag>Mustard Bio</Tag><Illo kind="layers" className="st-illo" /></div>
         <div className="st-r">
           <p className="h-1" data-r>{hero.body[0]}</p>
           <p className="lead" data-r>{hero.body[1]}</p>

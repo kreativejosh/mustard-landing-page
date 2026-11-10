@@ -16,16 +16,6 @@ export function Tag({ children, tone }: { children: ReactNode; tone?: 'd' }) {
   return <span className={`tag${tone ? ' tag-' + tone : ''}`}>{children}</span>;
 }
 
-/** The scale rule from the mark: 11 graduations, the dose in lime. Draws in when revealed. */
-export function Rule({ className = '', dose = true }: { className?: string; dose?: boolean }) {
-  const h = [30, 100, 85, 70, 55, 40, 55, 70, 85, 100, 30];
-  return (
-    <svg className={`rule ${className}`} viewBox="0 0 108 40" aria-hidden="true" data-r>
-      {h.map((p, i) => <rect key={i} x={i * 10 + (i > 5 ? 2 : 0)} y={40 - p * 0.4} width={i === 5 ? 4 : 1.6} height={p * 0.4} className={i === 5 && dose ? 'dose' : undefined} style={{ transitionDelay: `${Math.abs(i - 5) * 50}ms` }} />)}
-    </svg>
-  );
-}
-
 /** Display title: first line(s) in ink, last line muted. Lines rise in on reveal. */
 export function Title({ lines, as: As = 'h2', className = '' }: { lines: string[]; as?: 'h1' | 'h2'; className?: string }) {
   return (

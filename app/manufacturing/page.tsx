@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 import { MANUFACTURING as M } from '@/lib/copy';
 import { CtaBand } from '@/components/cta-band';
-import { Tag, Title, Frame, Rule } from '@/components/ui';
+import { Tag, Title, Frame } from '@/components/ui';
 
 export const metadata: Metadata = pageMetadata('manufacturing');
 
@@ -62,7 +62,6 @@ export default function Manufacturing() {
             </svg>
             <span className="node n1">Manufacturing operations</span>
             <span className="node n2">Software systems</span>
-            <Rule className="loop-rule" />
           </div>
         </div>
       </section>

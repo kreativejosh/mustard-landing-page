@@ -3,7 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 import { ABOUT as A } from '@/lib/copy';
 import { ContactForm } from '@/components/contact-form';
-import { Tag, Title, Frame, Rule } from '@/components/ui';
+import { Tag, Title, Frame } from '@/components/ui';
 
 export const metadata: Metadata = pageMetadata('about');
 
@@ -14,8 +14,8 @@ export default function About() {
       <section className="phero wrap" data-page="/about" data-dark="0">
         <div className="phero-t"><Tag>About</Tag><Title as="h1" lines={A.hero.title} className="d-1" /></div>
         <div className="about-grid">
-          <Frame src="/assets/render/asset-mark-light.jpg" alt="The Mustard Bio scale-rule mark as a glass sculpture" className="about-img" parallax />
-          <div className="about-b">{A.hero.body.map((p, i) => <p key={i} className={i ? 'body' : 'h-2'} data-r>{p}</p>)}<Rule /></div>
+          <Frame src="/assets/render/asset-tubes.jpg" alt="Glass test tubes in a rack, rendered in the Mustard Bio palette" className="about-img" parallax />
+          <div className="about-b">{A.hero.body.map((p, i) => <p key={i} className={i ? 'body' : 'h-2'} data-r>{p}</p>)}</div>
         </div>
       </section>
 
