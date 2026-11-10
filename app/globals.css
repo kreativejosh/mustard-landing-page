@@ -45,8 +45,8 @@ ol,ul{list-style:none;margin:0;padding:0}
 .title .ln>span{display:inline-block;transform:translateY(105%);transition:transform 1.1s var(--ease)}
 .title.in .ln>span{transform:none}
 .title .mute{color:var(--muted)}
-[data-r]:not(.title){opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-[data-r].in:not(.title){opacity:1;transform:none}
+[data-r]:not(.title):not(.ftr-rule){opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+[data-r].in:not(.title):not(.ftr-rule){opacity:1;transform:none}
 
 
 /* ---------- buttons ---------- */
@@ -72,7 +72,6 @@ ol,ul{list-style:none;margin:0;padding:0}
 .illo{display:block;color:var(--ink);overflow:visible}
 .st-illo{width:clamp(150px,16vw,220px);height:auto}
 .band-illo{width:clamp(96px,9vw,128px);height:auto;color:var(--sage);opacity:.7}
-.ftr-flow{width:100%;height:clamp(80px,9vw,130px);color:rgba(255,255,255,.4);padding:0 var(--gut);box-sizing:border-box;max-width:var(--max);margin:0 auto}
 
 /* ---------- header ---------- */
 .hdr{position:fixed;inset:0 0 auto;z-index:50;color:var(--ink);transition:background .4s var(--ease),color .4s var(--ease)}
@@ -254,6 +253,10 @@ ol,ul{list-style:none;margin:0;padding:0}
 .ftr-cols .k{color:var(--sage);margin-bottom:6px}
 .ftr-cols a{color:rgba(255,255,255,.82);transition:color .2s}
 .ftr-cols a:hover{color:var(--mint)}
+.ftr-rule{max-width:var(--max);margin-inline:auto;padding:0 var(--gut);height:clamp(90px,14vw,210px);display:flex;align-items:flex-end;justify-content:space-between}
+.ftr-rule i{width:clamp(4px,.7vw,10px);background:rgba(255,255,255,.88);border-radius:1px;transform-origin:50% 100%;transform:scaleY(0);transition:transform 1.1s var(--ease)}
+.ftr-rule i.dose{width:clamp(10px,1.6vw,24px);background:var(--lime)}
+.ftr-rule.in i{transform:none}
 .ftr-base{max-width:var(--max);margin-inline:auto;padding:28px var(--gut) 32px;display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid rgba(255,255,255,.12);margin-top:28px;font:400 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--sage)}
 .ftr-base img{width:160px;height:auto}
 

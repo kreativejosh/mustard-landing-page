@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body>
-        <noscript><style>{`[data-r]{opacity:1!important;transform:none!important}.title .ln>span{transform:none!important}`}</style></noscript>
+        <noscript><style>{`[data-r]{opacity:1!important;transform:none!important}.title .ln>span,.ftr-rule i{transform:none!important}`}</style></noscript>
         <a href="#main" className="skip">Skip to content</a>
         <Nav />
         <main id="main">{children}</main>

@@ -59,14 +59,3 @@ export const ILLO = {
   },
 };
 export type IlloKind = keyof typeof ILLO;
-
-/** The pack's flow illustration stretched to a wide band (same line count and wave), for the footer. */
-export function flowWide(width = 1140) {
-  let d = '';
-  for (let k = 0; k < 14; k++) {
-    let p = '';
-    for (let x = 0; x <= width; x += 6) { const y = 20 + k * 5.6 + Math.sin(x / 90 + k * 0.35) * 10 * Math.sin(k / 4 + 1); p += (x ? 'L' : 'M') + x + ' ' + y.toFixed(2); }
-    d += p;
-  }
-  return `<path d="${d}"/>`;
-}
