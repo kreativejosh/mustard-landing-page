@@ -1,5 +1,5 @@
 import Link from '@/components/link';
-import { NAV, TAGLINE, HOME, ABOUT } from '@/lib/copy';
+import { NAV, TAGLINE, HOME } from '@/lib/copy';
 import { Btn } from './ui';
 
 /** Charcoal footer: tagline + CTA, page index, and the scale rule stretched across the full width. */
@@ -14,7 +14,7 @@ export function Footer() {
         </div>
         <div className="ftr-cols">
           <div><span className="k">Pages</span>{NAV.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}</div>
-          <div><span className="k">Contact</span>{ABOUT.contact.topics.map((t) => <Link key={t} href="/about#contact">{t}</Link>)}</div>
+          <div><span className="k">Contact</span><Link href="/about#contact">Partnerships</Link></div>
         </div>
       </div>
       <div className="ftr-rule" aria-hidden="true" data-r>
