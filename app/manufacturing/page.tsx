@@ -56,7 +56,7 @@ export default function Manufacturing() {
       <section className="wrap evolve">
         <div className="ev-in">
           <div className="ev-t"><Tag tone="d">Maverick OS</Tag><h2 className="d-2" data-r>{M.evolve.title}</h2>{M.evolve.body.map((p, i) => <p key={i} className="lead" data-r>{p}</p>)}</div>
-          <div className="ev-media" data-r><MotionBg className="ev-video" src="/assets/motion/blob.mp4" poster="/assets/motion/blob.jpg" /></div>
+          <div className="ev-media" data-r><MotionBg className="ev-video" src="/assets/motion/blob-charcoal.mp4" poster="/assets/motion/blob-charcoal.jpg" /></div>
         </div>
       </section>
 

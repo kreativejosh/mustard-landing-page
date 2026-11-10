@@ -288,7 +288,7 @@ ol,ul{list-style:none;margin:0;padding:0}
 .evolve{padding-bottom:clamp(72px,8vw,120px)}
 .ev-in{background:var(--charcoal);color:#fff;border-radius:var(--r5);padding:clamp(40px,5vw,80px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center}
 .ev-t{display:flex;flex-direction:column;gap:22px}
-.ev-media{position:relative;aspect-ratio:4/3;border-radius:var(--r4);overflow:hidden;background:#DCDED3}
+.ev-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--charcoal);-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 98%);mask-image:radial-gradient(closest-side,#000 55%,transparent 98%)}  /* charcoal loop, edges feathered so it melts into the panel */
 .ev-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.15)}
 .ev-t .lead{color:rgba(255,255,255,.8)}
 
