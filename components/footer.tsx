@@ -1,10 +1,10 @@
 import Link from '@/components/link';
 import { NAV, TAGLINE, HOME, ABOUT } from '@/lib/copy';
 import { Btn } from './ui';
+import { FlowBand } from './illo';
 
-/** Charcoal footer: tagline + CTA, page index, and the scale rule stretched across the full width. */
+/** Charcoal footer: tagline + CTA, page index, and the flow illustration as a full-width band. */
 export function Footer() {
-  const h = [30, 100, 85, 70, 55, 40, 55, 70, 85, 100, 30];
   return (
     <footer className="ftr">
       <div className="ftr-top">
@@ -17,9 +17,7 @@ export function Footer() {
           <div><span className="k">Contact</span>{ABOUT.contact.topics.map((t) => <Link key={t} href="/about#contact">{t}</Link>)}</div>
         </div>
       </div>
-      <div className="ftr-rule" aria-hidden="true" data-r>
-        {h.map((p, i) => <i key={i} className={i === 5 ? 'dose' : undefined} style={{ height: `${p}%`, transitionDelay: `${Math.abs(i - 5) * 60}ms` }} />)}
-      </div>
+      <FlowBand className="ftr-flow" />
       <div className="ftr-base">
         <img src="/assets/logo/primary-white-dose.svg" alt="Mustard Bio" width={200} height={34} />
         <span>© {new Date().getFullYear()} Mustard Bio</span>
