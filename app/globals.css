@@ -301,6 +301,11 @@ ol,ul{list-style:none;margin:0;padding:0}
 .thero{margin:10px;border-radius:var(--r5);background:radial-gradient(90% 80% at 85% 10%,#3a564f 0%,var(--charcoal) 60%);color:#fff;overflow:hidden}
 .thero-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(40px,5vw,80px);align-items:center;padding-top:calc(var(--hdr) + clamp(40px,6vw,96px));padding-bottom:clamp(56px,6vw,96px)}
 .thero-t{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+/* the screen rises from the bottom edge of the panel and runs past it (clipped by .thero overflow) */
+.thero-in{align-items:end}
+.thero-t{align-self:center}
+.thero-ui{align-self:end;margin-bottom:calc(-1 * clamp(56px,6vw,96px) - clamp(90px,9vw,150px))}
+.thero-ui .mos{border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:0 -24px 60px -30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08)}
 .thero-sub{font-size:clamp(22px,2vw,30px);line-height:1.2;letter-spacing:-.018em;color:var(--mint);max-width:22ch}
 .thero-b{color:rgba(255,255,255,.78);max-width:46ch;margin-bottom:8px}
 .today{padding-block:clamp(80px,9vw,140px) clamp(56px,6vw,96px)}
@@ -311,8 +316,8 @@ ol,ul{list-style:none;margin:0;padding:0}
 .flow-steps li::after{content:"";position:absolute;right:-8px;top:28px;width:8px;height:1px;background:var(--ink)}
 .flow-steps li:last-child::after{display:none}
 .flow-steps li:nth-child(odd){background:var(--stone)}
-.note{display:flex;gap:16px;align-items:flex-start;margin-top:24px;border:1px solid var(--ink);border-radius:var(--r3);padding:20px 22px;max-width:900px}
-.note p{color:var(--ink);font-size:16px}
+.note{display:flex;gap:16px;align-items:flex-start;margin-top:24px;border:1px solid var(--ink);border-radius:var(--r3);padding:20px 22px}
+.note p{max-width:90ch;color:var(--ink);font-size:16px}
 .note-i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font:500 13px/1 var(--mono)}
 .road{padding-bottom:clamp(80px,9vw,140px)}
 .road-h{margin-bottom:32px}
