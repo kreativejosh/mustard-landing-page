@@ -84,7 +84,7 @@ export default function Home() {
           {start.body.map((p, i) => <p key={i} className={i === 2 ? 'lead' : 'body'} data-r>{p}</p>)}
           <Btn href="/manufacturing">Manufacturing</Btn>
         </div>
-        <Frame src="/assets/render/facility-facade.jpg" alt="Illustrative render of a Mustard Bio manufacturing facility" caption="Illustrative render" className="start-img" parallax />
+        <Frame src="/assets/render/facility-facade.jpg" alt="Exterior of a manufacturing facility with Mustard Bio signage" className="start-img" parallax />
       </section>
 
       <CtaBand cta={build.cta} href="/about#contact" />
