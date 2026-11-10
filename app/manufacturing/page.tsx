@@ -33,7 +33,7 @@ export default function Manufacturing() {
       </section>
 
       <section className="wrap focus">
-        <div className="focus-img"><Frame src="/assets/render/asset-tablets.jpg" alt="Tablets and capsules" parallax /></div>
+        <div className="focus-img"><Frame src="/assets/render/asset-pack.jpg" alt="Cartons and blister packs" parallax /></div>
         <div className="focus-txt">
           <Tag>{M.blocks[0].eyebrow}</Tag>
           <h2 className="d-2" data-r>{M.blocks[0].title}</h2>
