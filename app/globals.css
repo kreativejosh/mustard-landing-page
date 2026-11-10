@@ -267,15 +267,15 @@ ol,ul{list-style:none;margin:0;padding:0}
 .phero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,4vw,64px);align-items:end}
 .phero-img{aspect-ratio:16/10}
 .phero-b{display:flex;flex-direction:column;gap:22px;padding-bottom:6px}
-.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:clamp(48px,5vw,80px) 0 0;border-top:1px solid var(--ink)}
-.facts div{padding:22px 24px 0 0;display:flex;flex-direction:column;gap:14px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:clamp(48px,5vw,80px) 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.facts div{padding:22px 24px 22px 0;display:flex;flex-direction:column;gap:14px}
 .facts div+div{padding-left:24px;border-left:1px solid var(--line)}
 .facts dd{margin:0;font-size:clamp(20px,1.6vw,24px);letter-spacing:-.015em;line-height:1.25}
 .facts .num-xl{display:block;font-size:clamp(48px,5vw,76px);font-weight:400;letter-spacing:-.04em;line-height:1}
 .facts .num-sm{display:block;font-size:15px;color:var(--ink-2);letter-spacing:0;margin:2px 0}
 
 /* ---------- manufacturing ---------- */
-.focus{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,88px);align-items:center;padding-block:clamp(72px,8vw,120px);border-top:1px solid var(--line)}
+.focus{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,88px);align-items:center;padding-block:clamp(72px,8vw,120px)}
 .focus-img .frame{aspect-ratio:1}
 .focus-txt{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
 .forms{display:flex;gap:10px;flex-wrap:wrap}
@@ -421,7 +421,7 @@ ol,ul{list-style:none;margin:0;padding:0}
   .biz-link.in i{transform:none}
   .road-l li{grid-template-columns:1fr;gap:16px}
   .facts{grid-template-columns:1fr}
-  .facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:22px;margin-top:22px}
+  .facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:22px}
   .vgrid{grid-template-columns:1fr}
   .vgrid li:nth-child(even){padding-left:0;border-left:0}
   .start-img{order:-1}
