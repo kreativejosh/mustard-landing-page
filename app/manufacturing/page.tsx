@@ -3,6 +3,7 @@ import { pageMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/json-ld';
 import { MANUFACTURING as M } from '@/lib/copy';
 import { CtaBand } from '@/components/cta-band';
+import { MotionBg } from '@/components/motion-bg';
 import { Tag, Title, Frame } from '@/components/ui';
 
 export const metadata: Metadata = pageMetadata('manufacturing');
@@ -55,14 +56,7 @@ export default function Manufacturing() {
       <section className="wrap evolve">
         <div className="ev-in">
           <div className="ev-t"><Tag tone="d">Maverick OS</Tag><h2 className="d-2" data-r>{M.evolve.title}</h2>{M.evolve.body.map((p, i) => <p key={i} className="lead" data-r>{p}</p>)}</div>
-          <div className="loop" aria-hidden="true" data-r>
-            <svg className="loop-svg" viewBox="0 0 400 260">
-              <path className="loop-p" d="M110 130 C110 50 290 50 290 130 C290 210 110 210 110 130 Z" />
-              <circle className="loop-dot" r="5"><animateMotion dur="7s" repeatCount="indefinite" path="M110 130 C110 50 290 50 290 130 C290 210 110 210 110 130 Z" /></circle>
-            </svg>
-            <span className="node n1">Manufacturing operations</span>
-            <span className="node n2">Software systems</span>
-          </div>
+          <div className="ev-media" data-r><MotionBg className="ev-video" src="/assets/motion/blob.mp4" poster="/assets/motion/blob.jpg" /></div>
         </div>
       </section>
 
