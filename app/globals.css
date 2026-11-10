@@ -165,6 +165,46 @@ ol,ul{list-style:none;margin:0;padding:0}
 .biz-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .biz-card:hover .biz-img img{transform:scale(1.04)}
 .biz-img.ui{display:grid;place-items:center;padding:28px 28px 0;background:radial-gradient(120% 90% at 70% 0%,#35504a 0%,var(--charcoal) 70%)}
+/* motion card: the brand capsule loop fills the card; text sits on a soft scrim at the foot */
+.biz-card.media{position:relative;isolation:isolate;color:#fff;background:#1d2b2b;min-height:clamp(520px,46vw,680px)}
+.biz-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
+.biz-card.media:hover .biz-bg{transform:scale(1.04)}
+.biz-card.media::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(20,30,30,0) 30%,rgba(20,30,30,.35) 55%,rgba(16,24,24,.82) 100%)}
+.biz-card.media .biz-over{margin-top:auto;flex:0 0 auto;background:rgba(18,28,28,.28);backdrop-filter:blur(10px) saturate(1.1);-webkit-backdrop-filter:blur(10px) saturate(1.1);border-top:1px solid rgba(255,255,255,.1)}
+.biz-card.media .body{color:rgba(255,255,255,.84)}
+.biz-card.media .k{color:var(--mint)}
+.biz-card.media .more svg{color:var(--lime)}
+.biz-card.media .more{margin-top:0;padding-top:8px}
+
+/* dashboard illustration (abstract: no real UI) */
+.dash{width:100%;height:auto;display:block;border-radius:var(--r3) var(--r3) 0 0;box-shadow:0 -10px 40px -20px rgba(0,0,0,.6)}
+.dash .d-win{fill:#F4F6F5;stroke:none}
+.dash .d-bar{stroke:var(--line);fill:none}
+.dash .d-dot{fill:var(--g2)}
+.dash .d-sk{fill:#D9DDD8}
+.dash .d-sk.dim{fill:#E6E8E4}
+.dash .d-chip{fill:var(--mint)}
+.dash .d-side{fill:#fff;stroke:var(--line)}
+.dash .d-hi{fill:var(--charcoal)}
+.dash .d-scan{animation:scan 9.6s steps(1) infinite}
+@keyframes scan{0%{transform:translateY(0)}16.6%{transform:translateY(40px)}33.3%{transform:translateY(80px)}50%{transform:translateY(120px)}66.6%{transform:translateY(160px)}83.3%{transform:translateY(200px)}}
+.dash .d-sq{fill:var(--g2);animation:tick 9.6s steps(1) infinite}
+@keyframes tick{0%{fill:var(--g2)}10%{fill:var(--lime)}}
+.dash .d-card{fill:#fff;stroke:var(--line)}
+.dash .d-grid{stroke:var(--g1);fill:none}
+.dash .d-line{fill:none;stroke:var(--lime);stroke-width:2.2;vector-effect:non-scaling-stroke}
+.dash .d-line2{fill:none;stroke:var(--sage);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.dash .d-drift{animation:drift 9s linear infinite}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-400px)}}
+.dash .d-col{fill:var(--sage);transform-box:fill-box;transform-origin:50% 100%;animation:work 3s var(--ease-io) infinite alternate}
+.dash .d-col.on{fill:var(--lime)}
+@keyframes work{from{transform:scaleY(.55)}to{transform:scaleY(1)}}
+.dash .d-arc{fill:none;stroke:var(--g1);stroke-width:7;stroke-linecap:round}
+.dash .d-arc.on{stroke:var(--lime)}
+.dash .d-needle{transform-origin:446px 286px;animation:sweep 4.8s var(--ease-io) infinite alternate}
+.dash .d-needle path{stroke:var(--charcoal);stroke-width:2.2;stroke-linecap:round}
+.dash .d-needle circle{fill:var(--charcoal)}
+@keyframes sweep{from{transform:rotate(-55deg)}to{transform:rotate(40deg)}}
 .biz-txt{padding:clamp(24px,2.6vw,40px);display:flex;flex-direction:column;gap:14px;flex:1}
 .biz-txt h3{margin-bottom:4px}
 .more{margin-top:auto;padding-top:18px;display:inline-flex;align-items:center;gap:10px;font:500 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
@@ -385,6 +425,8 @@ ol,ul{list-style:none;margin:0;padding:0}
   .start-img{order:-1}
 }
 @media (max-width:640px){
+  .biz-card.media{min-height:0}
+  .biz-card.media::before{content:"";display:block;aspect-ratio:1/1;flex:none}
   body{font-size:16px}
   .hero,.thero{margin:6px;border-radius:var(--r4)}
   .band,.ftr,.vision{margin-inline:6px;border-radius:var(--r4)}

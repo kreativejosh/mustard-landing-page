@@ -4,7 +4,8 @@ import { JsonLd } from '@/components/json-ld';
 import Link from '@/components/link';
 import { HOME } from '@/lib/copy';
 import { HeroCanvas } from '@/components/hero-canvas';
-import { MaverickUI } from '@/components/maverick-ui';
+import { MotionBg } from '@/components/motion-bg';
+import { DashboardIllo } from '@/components/dashboard-illo';
 import { CtaBand } from '@/components/cta-band';
 import { Btn, Tag, Title, Frame, Arrow } from '@/components/ui';
 import { Illo } from '@/components/illo';
@@ -52,9 +53,9 @@ export default function Home() {
       <section className="wrap biz">
         <div className="biz-head"><Tag>02 · Mustard Bio</Tag><h2 className="d-2" data-r>{b.title}</h2></div>
         <div className="biz-grid">
-          <Link href="/manufacturing" className="biz-card light" data-r>
-            <div className="biz-img"><img src="/assets/render/asset-tablets.jpg" alt="Tablets and capsules" loading="lazy" /></div>
-            <div className="biz-txt">
+          <Link href="/manufacturing" className="biz-card media" data-r>
+            <MotionBg className="biz-bg" src="/assets/motion/capsule.mp4" poster="/assets/motion/capsule.jpg" />
+            <div className="biz-txt biz-over">
               <span className="k">A · Manufacturing</span>
               <h3 className="h-2">{b.manufacturing.title}</h3>
               {b.manufacturing.body.map((p, i) => <p key={i} className="body">{p}</p>)}
@@ -63,7 +64,7 @@ export default function Home() {
           </Link>
           <div className="biz-link" aria-hidden="true" data-r><i /><b /><i /></div>
           <Link href="/technology" className="biz-card dark" data-r>
-            <div className="biz-img ui"><MaverickUI compact /></div>
+            <div className="biz-img ui"><DashboardIllo /></div>
             <div className="biz-txt">
               <span className="k">B · Technology</span>
               <h3 className="h-2">{b.intelligence.title}</h3>
