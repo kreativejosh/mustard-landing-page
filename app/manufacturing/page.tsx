@@ -19,7 +19,7 @@ export default function Manufacturing() {
       <section className="phero wrap" data-page="/manufacturing" data-dark="0">
         <div className="phero-t"><Tag>Manufacturing</Tag><Title as="h1" lines={M.hero.title} className="d-1" /></div>
         <div className="phero-grid">
-          <Frame src="/assets/render/facility-corridor.jpg" alt="Illustrative render of a clean manufacturing corridor" caption="Illustrative render" className="phero-img" parallax />
+          <Frame src="/assets/render/facility-corridor.jpg" alt="A clean manufacturing corridor" className="phero-img" parallax />
           <div className="phero-b">{M.hero.body.map((p, i) => <p key={i} className={i ? 'body' : 'lead'} data-r>{p}</p>)}</div>
         </div>
         <dl className="facts">

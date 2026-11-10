@@ -25,12 +25,11 @@ export function Title({ lines, as: As = 'h2', className = '' }: { lines: string[
   );
 }
 
-/** Image in a rounded frame with an honest caption. Renders are served untouched. */
-export function Frame({ src, alt, caption, className = '', parallax }: { src: string; alt: string; caption?: string; className?: string; parallax?: boolean }) {
+/** Image in a rounded frame. Renders are served untouched. */
+export function Frame({ src, alt, className = '', parallax }: { src: string; alt: string; className?: string; parallax?: boolean }) {
   return (
     <figure className={`frame ${className}`} data-r>
       <img src={src} alt={alt} loading="lazy" {...(parallax ? { 'data-px': '' } : {})} />
-      {caption && <figcaption>{caption}</figcaption>}
     </figure>
   );
 }
