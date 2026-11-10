@@ -27,6 +27,12 @@ Generated from the copy, see `lib/seo.ts`:
 | `NEXT_PUBLIC_CONTACT_ENDPOINT` | Form service URL that accepts a JSON POST (Formspree, Basin, own API). |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | Used when no endpoint is set: the form opens the visitor's mail app addressed here. |
 
+## CI/CD
+- **CI** (`.github/workflows/ci.yml`): every pull request into `main` runs lint, type-check, `npm audit` (production, high and above) and a full build, then checks every page and SEO file was exported.
+- **CD**: Vercel's GitHub integration. Merging a pull request into `main` deploys to production; every pull request gets a preview URL in its checks.
+- **Dependabot** (`.github/dependabot.yml`): weekly dependency PRs, Next.js/React grouped, so security releases arrive as PRs that CI checks.
+- Protect `main` so nothing reaches production without passing CI (see below).
+
 ## Deploy
 Vercel: import this repo, framework Next.js, no settings needed beyond the variables above. Any static host works with `out/`.
 

@@ -1,0 +1,54 @@
+# CI: every pull request (and every push to main) must lint, type-check, pass the security audit and build.
+# Deployment is done by Vercel's GitHub integration: merging to main deploys to production,
+# and each pull request gets its own preview URL.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Lint, type-check, audit, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npx eslint .
+
+      - name: Type-check
+        run: npx tsc --noEmit
+
+      - name: Security audit (production dependencies)
+        run: npm audit --omit=dev --audit-level=high
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+
+      - name: Check the exported site
+        run: |
+          for f in index.html manufacturing.html technology.html about.html sitemap.xml robots.txt llms.txt llms-full.txt og/home.png; do
+            test -s "out/$f" || { echo "missing out/$f"; exit 1; }
+          done
+          echo "All pages and SEO files exported."

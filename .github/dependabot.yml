@@ -1,0 +1,24 @@
+# Weekly dependency updates as pull requests (CI runs on each; merge to deploy).
+# Next.js security releases are what Vercel blocks builds on, so they are grouped and raised promptly.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      next:
+        patterns: ["next", "eslint-config-next", "react", "react-dom", "@types/react", "@types/react-dom"]
+      dev-tooling:
+        dependency-type: development
+    ignore:
+      # stay on Next 15 until a deliberate upgrade to the next major
+      - dependency-name: next
+        update-types: ["version-update:semver-major"]
+      - dependency-name: eslint-config-next
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
