@@ -14,7 +14,7 @@ export function Footer() {
         </div>
         <div className="ftr-cols">
           <div><span className="k">Pages</span>{NAV.map((n) => <Link key={n.href} href={n.href}>{n.label}</Link>)}</div>
-          <div><span className="k">Contact</span><Link href="/about#contact">Partnerships</Link></div>
+          <div><span className="k">Contact</span><Link href="/about#contact">Partnerships</Link><Link href="/careers">Careers</Link></div>
         </div>
       </div>
       <div className="ftr-rule" aria-hidden="true" data-r>

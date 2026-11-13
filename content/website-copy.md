@@ -16,16 +16,10 @@ real-world production.
 Mustard Bio is building a new model for pharmaceutical manufacturing, combining advanced
 production infrastructure with proprietary manufacturing intelligence software.
 
-We are starting with pharmaceuticals in Nigeria, developing the technology and operating
-systems intended to power smarter factories around the world.
-
 Primary CTA: Explore Mustard Bio​
 Secondary CTA: Partner With Us
 
 A new approach to manufacturing
-
-Pharmaceutical manufacturing is a complex undertaking that requires significant investment in
-equipment, quality systems, regulatory compliance and skilled personnel.
 
 The next generation of manufacturers will compete on how intelligently production capacity is
 operated.
@@ -178,3 +172,35 @@ We are starting in Nigeria with an ambition to serve manufacturing markets globa
 For manufacturing enquiries, technology partnerships and investment conversations, contact
 Mustard Bio.
 ```
+
+CAREERS
+
+Build the factories of the future.
+
+At Mustard Bio, we’re rethinking how medicines are manufactured by bringing together pharmaceutical
+production, intelligent software and automation.
+
+We’re building from Nigeria with global ambitions, and looking for ambitious people across
+engineering, life sciences, manufacturing and operations who want to solve difficult problems and
+build technology with real-world impact.
+
+Primary CTA: View Open Positions
+Secondary CTA: General Applications
+
+Open Roles
+
+Explore opportunities to join our team across:
+
+Software & AI Engineering
+Pharmaceutical Manufacturing
+Automation & Industrial Engineering
+Quality Assurance & Regulatory Affairs
+Business & Operations
+
+Current vacancies will be listed here as they become available.
+
+Don’t see your role?
+
+We’re always interested in meeting exceptional people who believe in what we’re building.
+
+Send your CV and a brief introduction to our careers team.

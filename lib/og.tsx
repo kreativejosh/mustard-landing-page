@@ -6,7 +6,7 @@ import { PAGES, type PageKey } from './seo';
 import { ILLO, type IlloKind } from './brand/illustrations';
 
 // one illustration from the brand pack per page (the logo already sits top left)
-const ART: Record<PageKey, IlloKind> = { home: 'layers', manufacturing: 'capsules', technology: 'lattice', about: 'dose' };
+const ART: Record<PageKey, IlloKind> = { home: 'layers', manufacturing: 'capsules', technology: 'lattice', about: 'dose', careers: 'network' };
 
 export const OG_SIZE = { width: 1200, height: 630 };
 const ROOT = process.cwd();

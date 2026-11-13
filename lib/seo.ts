@@ -1,6 +1,6 @@
 // Search and AI-search metadata, built only from the verbatim website copy (lib/copy.ts).
 import type { Metadata } from 'next';
-import { HOME, MANUFACTURING, TECHNOLOGY, ABOUT, TAGLINE } from './copy';
+import { HOME, MANUFACTURING, TECHNOLOGY, ABOUT, CAREERS, TAGLINE } from './copy';
 
 /** Canonical origin: NEXT_PUBLIC_SITE_URL, else Vercel's production domain, else localhost for dev. */
 export const SITE_URL = (
@@ -10,7 +10,7 @@ export const SITE_URL = (
 
 export const NAME = 'Mustard Bio';
 
-export type PageKey = 'home' | 'manufacturing' | 'technology' | 'about';
+export type PageKey = 'home' | 'manufacturing' | 'technology' | 'about' | 'careers';
 
 /** One record per page: what search engines, social cards, JSON-LD and llms.txt all read. */
 export const PAGES: Record<PageKey, { path: string; title: string; heading: string; description: string; label: string }> = {
@@ -18,6 +18,7 @@ export const PAGES: Record<PageKey, { path: string; title: string; heading: stri
   manufacturing: { path: '/manufacturing', label: 'Manufacturing', title: 'Pharmaceutical manufacturing', heading: MANUFACTURING.hero.title.join(' '), description: MANUFACTURING.hero.body[0] },
   technology: { path: '/technology', label: 'Technology', title: 'Maverick OS', heading: TECHNOLOGY.hero.title.join(' '), description: TECHNOLOGY.hero.body[0] },
   about: { path: '/about', label: 'About', title: 'About and vision', heading: ABOUT.hero.title.join(' '), description: ABOUT.hero.body[0] },
+  careers: { path: '/careers', label: 'Careers', title: 'Careers', heading: CAREERS.hero.title.join(' '), description: CAREERS.hero.body[1] },
 };
 
 export const url = (path: string) => SITE_URL + (path === '/' ? '' : path);
