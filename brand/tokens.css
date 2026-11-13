@@ -1,0 +1,32 @@
+/* Mustard Bio design tokens v1.0. */
+:root {
+  /* colour */
+  --mb-charcoal: #222F30;   /* primary ink, dark surfaces */
+  --mb-deepsea: #445E5F;    /* secondary dark */
+  --mb-sage: #C9CBBE;       /* display second halves (48px+ only), quiet grounds */
+  --mb-lime: #A7E26E;       /* the dose: accents on dark, tag square */
+  --mb-mint: #CEF79E;       /* arrow tile, highlight surfaces */
+  --mb-offwhite: #F7F7F5;   /* default surface */
+  --mb-stone: #E7E8E1;      /* feature cards, 3D floors */
+  --mb-gray-1: #EEEEEE;
+  --mb-gray-2: #E4E3E3;     /* lines */
+  --mb-white: #FFFFFF;
+  --mb-text: #222F30;
+  --mb-text-2: #5C6B6C;     /* 5.56:1 on white */
+  --mb-text-3: #8B8F86;     /* labels at 13px+ only */
+
+  /* type */
+  --mb-font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mb-font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --mb-display-1: 112px; --mb-display-2: 72px; --mb-h1: 48px; --mb-h2: 32px; --mb-lead: 22px; --mb-body: 17px; --mb-label: 13px;
+  --mb-tracking-display: -0.03em; --mb-tracking-label: 0.05em;
+
+  /* shape and space */
+  --mb-radius-1: 6px; --mb-radius-2: 10px; --mb-radius-3: 16px; --mb-radius-4: 24px;
+  --mb-space: 10px 20px 30px 50px 70px 90px 140px;
+
+  /* motion */
+  --mb-ease: cubic-bezier(.16, 1, .3, 1);
+  --mb-ease-loop: cubic-bezier(.65, 0, .35, 1);
+  --mb-dur-1: 200ms; --mb-dur-2: 400ms; --mb-dur-3: 800ms; --mb-dur-4: 1200ms;
+}

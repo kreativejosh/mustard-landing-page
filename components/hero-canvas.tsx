@@ -1,5 +1,5 @@
 'use client';
-// Live "flow" shader from the brand scene library (lib/brand/scenes.js): slow folds of tinted glass.
+// Live "flow" shader from the brand scene library (brand/scenes.js, synced): slow folds of tinted glass.
 // A still poster sits underneath, so the hero never flashes empty; reduced motion renders one frame.
 import { useEffect, useRef } from 'react';
 
@@ -9,7 +9,7 @@ export function HeroCanvas({ variant = 'dark' }: { variant?: 'dark' | 'light' })
     let raf = 0, alive = true, cleanup = () => {};
     (async () => {
       const THREE = await import('three');
-      const SCENES: any = (await import('@/lib/brand/scenes.js')).SCENES;
+      const SCENES: any = (await import('@/brand/scenes.js')).SCENES;
       const cv = ref.current; if (!cv || !alive) return;
       let r: any;
       try { r = new THREE.WebGLRenderer({ canvas: cv, antialias: false, alpha: false }); } catch { return; }

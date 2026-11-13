@@ -1,4 +1,6 @@
-# CI: every pull request (and every push to main) must lint, type-check, pass the security audit and build.
+# CI: every pull request (and every push to main) must keep the design-system
+# binding intact (brand files unmodified, constraints hold), then lint,
+# type-check, pass the security audit and build.
 # Deployment is done by Vercel's GitHub integration: merging to main deploys to production,
 # and each pull request gets its own preview URL.
 name: CI
@@ -18,7 +20,7 @@ permissions:
 
 jobs:
   check:
-    name: Lint, type-check, audit, build
+    name: Brand, lint, type-check, audit, build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -31,6 +33,12 @@ jobs:
 
       - name: Install
         run: npm ci
+
+      - name: Brand files unmodified
+        run: npm run brand:verify
+
+      - name: Design-system constraints
+        run: npm run brand:check
 
       - name: Lint
         run: npx eslint .
