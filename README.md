@@ -10,7 +10,13 @@ npm run build    # static site in out/
 
 ## Content
 - Copy lives in `lib/copy.ts`, word for word from `content/website-copy.md`. Do not reword it or add claims.
-- Brand: colours from `content/brand-tokens.css`, IBM Plex Sans and Mono (`.woff` files in `assets/fonts`, loaded with next/font/local, SIL OFL), logo and renders in `public/assets/`, hero shader from `lib/brand/scenes.js`. These come from the Mustard Bio brand repo; refresh them from there when the brand assets change.
+- Brand: everything in `brand/` (tokens, colour roles, icons, illustrations, scene library), plus `public/assets/` and `assets/fonts/`, is owned by the [Mustard Bio design system](https://github.com/kreativejosh/mustard-bio-brand) and **generated — never hand-edit it**. See `docs/design-system-binding.md`.
+
+```bash
+npm run brand:verify              # checksum every brand file (runs on dev and build)
+npm run brand:sync                # restore them from the pinned SHA
+npm run brand:sync -- --update    # adopt a new brand SHA after bumping it in the manifest
+```
 
 ## Search and AI search
 Generated from the copy, see `lib/seo.ts`:

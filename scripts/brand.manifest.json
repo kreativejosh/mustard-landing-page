@@ -1,0 +1,182 @@
+{
+  "$comment": "Pinned contract with the Mustard Bio design system. Bump `sha` and re-run `npm run brand:sync` to adopt a brand change; the diff is the review.",
+  "repo": "kreativejosh/mustard-bio-brand",
+  "sha": "39b853891d0337c24da01ae3236b7f4694ee6f4a",
+  "pinnedAt": "2026-11-13",
+  "files": [
+    {
+      "from": "design-system/tokens.css",
+      "to": "brand/tokens.css",
+      "sha256": "0b80f5ae330d4cd66177b4a0e4e9c585d5fde462095889981af32ef7c61de6c8",
+      "bytes": 1458
+    },
+    {
+      "from": "web/lib/brand.ts",
+      "to": "brand/brand.ts",
+      "sha256": "d37ad79528095713f411dce6c5485cd615ef3dbe82f5fa5a0ce63ebee2584a90",
+      "bytes": 10771
+    },
+    {
+      "from": "identity/render/scenes.js",
+      "to": "brand/scenes.js",
+      "sha256": "4edc6df05b13396ff6adb32af43a538ea94fa8e22d4fe6695345b7accf91ac2c",
+      "bytes": 22729
+    },
+    {
+      "from": "identity/assets/3d/blob-deep.jpg",
+      "to": "public/assets/3d/blob-deep.jpg",
+      "sha256": "85ff4892fc9b4375b222330dbe56d415520e5f1492c3f44b51ce271c2fb4d58f",
+      "bytes": 111688
+    },
+    {
+      "from": "identity/assets/3d/flow-dark.jpg",
+      "to": "public/assets/3d/flow-dark.jpg",
+      "sha256": "0b2cfa8588d18199d5ba8bf054be48170194a994cbde7153188c1f378a59446e",
+      "bytes": 77321
+    },
+    {
+      "from": "identity/assets/3d/flow-light.jpg",
+      "to": "public/assets/3d/flow-light.jpg",
+      "sha256": "4007f7f19f5702295971eb1d0af33d39bc52f40572920546a2fb8eb022d70b6e",
+      "bytes": 78862
+    },
+    {
+      "from": "identity/assets/logo/app-icon.svg",
+      "to": "public/assets/logo/app-icon.svg",
+      "sha256": "8b84ac33fdc03bd9f1dc1cd17f6f79e15ec04d0572bb0048b6812e1b0f29f64b",
+      "bytes": 401
+    },
+    {
+      "from": "identity/assets/logo/mark-charcoal.svg",
+      "to": "public/assets/logo/mark-charcoal.svg",
+      "sha256": "ec41cb60365a0d569511f429d135698e7dee35c9bc43b021dd16fb2c69c96352",
+      "bytes": 415
+    },
+    {
+      "from": "identity/assets/logo/mark-white-dose.svg",
+      "to": "public/assets/logo/mark-white-dose.svg",
+      "sha256": "69ce84f65a60315dfd5c0d4fcf241d46b7750ce2e7a8dd65b2519f40ed0174dd",
+      "bytes": 415
+    },
+    {
+      "from": "identity/assets/logo/primary-charcoal.svg",
+      "to": "public/assets/logo/primary-charcoal.svg",
+      "sha256": "a243fae139379dcd43b0e607d919b36de7b8b318385442ff62eaf201d9f0bfec",
+      "bytes": 5114
+    },
+    {
+      "from": "identity/assets/logo/primary-white-dose.svg",
+      "to": "public/assets/logo/primary-white-dose.svg",
+      "sha256": "a8455c070909b63281619ae2118df3916662adb1f96f4c7d8b15342325075570",
+      "bytes": 5112
+    },
+    {
+      "from": "identity/assets/motion/blob-charcoal.jpg",
+      "to": "public/assets/motion/blob-charcoal.jpg",
+      "sha256": "b699a016c9ed151f36dc2612a704de980fc6baa5b89ca2528060ce317f5a8462",
+      "bytes": 56408
+    },
+    {
+      "from": "identity/assets/motion/blob-charcoal.mp4",
+      "to": "public/assets/motion/blob-charcoal.mp4",
+      "sha256": "9048ae1bd8eaa881f883fdf84ba1470e95354e9cb4b2e517105c747ee6a354f2",
+      "bytes": 407072
+    },
+    {
+      "from": "identity/assets/motion/capsule.jpg",
+      "to": "public/assets/motion/capsule.jpg",
+      "sha256": "4ef737a2956666413be891e162bd85b9f4abc6eb4f9f51d165b3623f95778e3a",
+      "bytes": 19799
+    },
+    {
+      "from": "identity/assets/motion/capsule.mp4",
+      "to": "public/assets/motion/capsule.mp4",
+      "sha256": "b0bf530a7fd56ce0e555ee798cb07a6fe5a7ff9c7018e7b4bcf3a76e8c710e56",
+      "bytes": 602287
+    },
+    {
+      "from": "identity/assets/render/asset-capsule-dark.jpg",
+      "to": "public/assets/render/asset-capsule-dark.jpg",
+      "sha256": "3dc17866633ad4d981463027a6b1d784049be4f8cd81103e7b094c8ed221586b",
+      "bytes": 240201
+    },
+    {
+      "from": "identity/assets/render/asset-capsule-light.jpg",
+      "to": "public/assets/render/asset-capsule-light.jpg",
+      "sha256": "739af5828b355cc232dbe841e5c482525c5cb9a485753ed6f836bb3a7bf19737",
+      "bytes": 214000
+    },
+    {
+      "from": "identity/assets/render/asset-mark-dark.jpg",
+      "to": "public/assets/render/asset-mark-dark.jpg",
+      "sha256": "985c2e9f2bfeb72a721cc4de2dbbd51873c3563cda5aa61422f9fa704f9f04f6",
+      "bytes": 453279
+    },
+    {
+      "from": "identity/assets/render/asset-mark-light.jpg",
+      "to": "public/assets/render/asset-mark-light.jpg",
+      "sha256": "be54f439d4047a597b06bf020b62e415dc097224d5be1821b3c1c6d5d234d485",
+      "bytes": 263617
+    },
+    {
+      "from": "identity/assets/render/asset-pack.jpg",
+      "to": "public/assets/render/asset-pack.jpg",
+      "sha256": "3c21927f2fcb65c128f173b0f728a254bf45b460bbff8f9a64e638ed51975339",
+      "bytes": 241996
+    },
+    {
+      "from": "identity/assets/render/asset-tablets.jpg",
+      "to": "public/assets/render/asset-tablets.jpg",
+      "sha256": "8dcdce2017e01703524908d65b091a47d487806bf27c636ab555920f7f9f61d9",
+      "bytes": 231525
+    },
+    {
+      "from": "identity/assets/render/asset-tubes.jpg",
+      "to": "public/assets/render/asset-tubes.jpg",
+      "sha256": "0b26b833189f34c80d3669b998d0a99eda8c46304b363f53ffb624a20a235590",
+      "bytes": 309352
+    },
+    {
+      "from": "identity/assets/render/facility-corridor.jpg",
+      "to": "public/assets/render/facility-corridor.jpg",
+      "sha256": "1788b5ed1083a4b739c73c2cfd006d39a0216a71295095c34d716a43de7f38d7",
+      "bytes": 270057
+    },
+    {
+      "from": "identity/assets/render/facility-facade.jpg",
+      "to": "public/assets/render/facility-facade.jpg",
+      "sha256": "9ba92c29675ce58007e94cf8f16f0df21828dc4dd6b26873e45d36cb052b1588",
+      "bytes": 495203
+    },
+    {
+      "from": "identity/assets/fonts/ibm-plex-mono-latin-400-normal.woff",
+      "to": "assets/fonts/ibm-plex-mono-latin-400-normal.woff",
+      "sha256": "328d50b6ece9ca25c46eea3e885ba497f6237f2fb84ef7b92f88e14a1a25e381",
+      "bytes": 13144
+    },
+    {
+      "from": "identity/assets/fonts/ibm-plex-mono-latin-500-normal.woff",
+      "to": "assets/fonts/ibm-plex-mono-latin-500-normal.woff",
+      "sha256": "09f018c58556e5801ecc49d5b5275dcff4c73311c2af6b88e31c51d76d076a9d",
+      "bytes": 13156
+    },
+    {
+      "from": "identity/assets/fonts/ibm-plex-sans-latin-400-normal.woff",
+      "to": "assets/fonts/ibm-plex-sans-latin-400-normal.woff",
+      "sha256": "828907bfd14855c880789878bd2b38ffd284a6c27c8b80f6069900f70dae3901",
+      "bytes": 22104
+    },
+    {
+      "from": "identity/assets/fonts/ibm-plex-sans-latin-500-normal.woff",
+      "to": "assets/fonts/ibm-plex-sans-latin-500-normal.woff",
+      "sha256": "8d2c7b2eca91869d447851a9c8bd07edf629b26025eacb882291e03b384b4e35",
+      "bytes": 23916
+    },
+    {
+      "from": "source/fonts/OFL-IBM-Plex.txt",
+      "to": "assets/fonts/OFL-IBM-Plex.txt",
+      "sha256": "d0283623ef57e722fd0eb688a8041589670c608ab780cd3612d06ba6f153d3fd",
+      "bytes": 4429
+    }
+  ]
+}

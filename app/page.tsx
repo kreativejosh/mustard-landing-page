@@ -35,7 +35,6 @@ export default function Home() {
         <div className="st-l"><Tag>Mustard Bio</Tag><Illo kind="layers" className="st-illo" /></div>
         <div className="st-r">
           <p className="h-1" data-r>{hero.body[0]}</p>
-          <p className="lead" data-r>{hero.body[1]}</p>
         </div>
       </section>
 
@@ -44,7 +43,7 @@ export default function Home() {
         <div className="ap-l"><Tag>01 · Approach</Tag><h2 className="d-2" data-r>{approach.title}</h2></div>
         <ol className="ap-list">
           {approach.body.map((p, i) => (
-            <li key={i} data-r className={i === 1 ? 'em' : undefined}><span className="num">0{i + 1}</span><p>{p}</p></li>
+            <li key={i} data-r className={i === 0 ? 'em' : undefined}><span className="num">0{i + 1}</span><p>{p}</p></li>
           ))}
         </ol>
       </section>

@@ -7,7 +7,6 @@ export const HOME = {
     sub: 'Reinventing pharmaceutical manufacturing through intelligent systems, automation and real-world production.',
     body: [
       'Mustard Bio is building a new model for pharmaceutical manufacturing, combining advanced production infrastructure with proprietary manufacturing intelligence software.',
-      'We are starting with pharmaceuticals in Nigeria, developing the technology and operating systems intended to power smarter factories around the world.',
     ],
     primary: 'Explore Mustard Bio',
     secondary: 'Partner With Us',
@@ -15,7 +14,6 @@ export const HOME = {
   approach: {
     title: 'A new approach to manufacturing',
     body: [
-      'Pharmaceutical manufacturing is a complex undertaking that requires significant investment in equipment, quality systems, regulatory compliance and skilled personnel.',
       'The next generation of manufacturers will compete on how intelligently production capacity is operated.',
       'Mustard Bio is building towards that future by bringing manufacturing operations and software development together.',
     ],
@@ -131,7 +129,39 @@ export const ABOUT = {
   },
   contact: {
     body: 'For manufacturing enquiries, technology partnerships and investment conversations, contact Mustard Bio.',
-    topics: ['Manufacturing enquiries', 'Technology partnerships', 'Investment conversations'],
+    topics: ['Manufacturing enquiries', 'Technology partnerships', 'Investment conversations', 'Careers and applications'],
+  },
+};
+
+export const CAREERS = {
+  hero: {
+    title: ['Build the factories', 'of the future.'],
+    body: [
+      'At Mustard Bio, we\u2019re rethinking how medicines are manufactured by bringing together pharmaceutical production, intelligent software and automation.',
+      'We\u2019re building from Nigeria with global ambitions, and looking for ambitious people across engineering, life sciences, manufacturing and operations who want to solve difficult problems and build technology with real-world impact.',
+    ],
+    primary: 'View Open Positions',
+    secondary: 'General Applications',
+  },
+  roles: {
+    title: 'Open roles',
+    lead: 'Explore opportunities to join our team across:',
+    disciplines: [
+      { icon: 'chip', label: 'Software & AI Engineering' },
+      { icon: 'capsule', label: 'Pharmaceutical Manufacturing' },
+      { icon: 'automation', label: 'Automation & Industrial Engineering' },
+      { icon: 'quality', label: 'Quality Assurance & Regulatory Affairs' },
+      { icon: 'chart', label: 'Business & Operations' },
+    ] as const,
+    vacancies: 'Current vacancies will be listed here as they become available.',
+  },
+  general: {
+    title: ['Don\u2019t see', 'your role?'],
+    body: [
+      'We\u2019re always interested in meeting exceptional people who believe in what we\u2019re building.',
+      'Send your CV and a brief introduction to our careers team.',
+    ],
+    cta: 'General Applications',
   },
 };
 
